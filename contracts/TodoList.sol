@@ -17,6 +17,10 @@ contract  TodoList {
         string content,
         bool completed
     );
+    event taskCompleted(
+        uint id,
+        bool completed
+    );
 
     constructor() public {
         createTask("My first smart contract");
@@ -26,5 +30,13 @@ contract  TodoList {
         taskCount ++;
         tasks[taskCount] = Task(taskCount, _content, false);
         emit TaskCreated(taskCount, _content, false);
+    }
+
+    function toggleCompleted(uint _id) public {
+        // "_" = local variable 
+        Task memory _task = tasks[_id];
+        _task.completed = !_task.completed;
+        tasks[_id] = _task;
+        emit taskCompleted(_id, _task.completed);
     }
 }
