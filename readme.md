@@ -15,6 +15,6 @@ Credits for [@DappUniversity](https://twitter.com/DappUniversity "@DappUniversit
 
 
 Feel free to make any comment or suggestions.
-Contact me on Twitter [@cesc_iam](https://twitter.com/cesc_iam "@cesc_iam")
+Find me on Twitter as [@cesc_iam](https://twitter.com/cesc_iam "@cesc_iam")
 
 
